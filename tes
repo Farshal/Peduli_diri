@@ -1,0 +1,24 @@
+
+    <div class="col">
+    <img src="img/pict.jpg" alt="pic" class="img-fluid">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="h2">
+            <?php
+            echo"<p> Selamat Datang ".$_SESSION['nama_lengkap']." !!</p>";
+            ?>
+            </div> 
+        </div>
+        <div class="col-5">
+        <a href="?url=tulis_catatan" class="btn btn-primary text-center mt-6 px-3">
+        <i class="material-icons">add_circle</i>
+             Tambah riwayat
+        </a>
+        <a href="?url=catatan_perjalanan" class="btn btn-secondary text-center mt-6 px-3 mx-5">
+        <i class="material-icons">location_city</i>
+            Riwayat perjalanan anda
+        </a>
+        </div>
+    </div>
