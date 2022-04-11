@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peduli Diri - Login</title>
+    <title>Peduli Diri - Register</title>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <div class="global-container">
 <div class="card login-form">
     <div class="card-body">
-        <h1 class="card-title text-center">Peduli Diri</h1>
+        <h1 class="card-title text-center ">Peduli Diri</h1>
         <div class="card-text">
             <form class="user" method="post" action="proses_login.php">
                 <div class="form-group">
@@ -39,5 +39,4 @@
 </div>
 </div>
 </body>
-
 </html>
