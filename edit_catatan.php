@@ -7,7 +7,7 @@ $value = mysqli_fetch_array($query);
 ?>
 <div class="card">
     <div class="card-header">
-    <a href="user.php" class="btn btn-primary btn-icon-split">
+    <a href="user.php?url=catatan_perjalanan" class="btn btn-primary btn-icon-split">
         <span class="icon text-white-50">
             <i class="fas fa-arrow-left"></i>
         </span>
@@ -17,25 +17,25 @@ $value = mysqli_fetch_array($query);
 
     <div class="card-body">
     <form method="post" action="simpan_edit_catatan.php">
-        <input type="hidden" value="<?= $id_catatan ?>">
+        <input type="hidden" name="id_catatan" value="<?= $id_catatan ?>">
     <div class="form-group">
                 <label>Tanggal Perjalanan</label>
-                <input value="<?$value['tanggal'] ?>" name="tanggal" class="form-control" type="date" placeholder="Pilih Tanggal" required>
+                <input value="<?php echo $value['tanggal'] ?>" name="tanggal" class="form-control" type="date" placeholder="Pilih Tanggal" required>
             </div>
             <br>
             <div class="form-group">
                 <label>Waktu Perjalanan</label>
-                <input value="<?$value['waktu'] ?>" name="waktu" class="form-control" type="time" placeholder="Pilih Waktu" required>
+                <input value="<?php echo $value['waktu'] ?>" name="waktu" class="form-control" type="time" placeholder="Pilih Waktu" required>
             </div>
             <br>
             <div class="form-group">
                 <label>Lokasi Perjalanan</label>
-                <input value="<?$value['lokasi'] ?>" name="lokasi" class="form-control" type="text" placeholder="Masukan Lokasi Perjalanan" required>
+                <input value="<?php echo $value['lokasi'] ?>" name="lokasi" class="form-control" type="text" placeholder="Masukan Lokasi Perjalanan" required>
             </div>
             <br>
             <div class="form-group">
                 <label>Suhu Tubuh</label>
-                <input value="<?$value['suhu'] ?>" name="suhu" class="form-control" type="text" placeholder="Masukan Suhu Tubuh" required>
+                <input value="<?php echo $value['suhu'] ?>" name="suhu" class="form-control" type="text" placeholder="Masukan Suhu Tubuh" required>
             </div>
             <br>
             <div class="form-group">

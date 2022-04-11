@@ -7,14 +7,6 @@
         </span>
         <span class="text">Kembali</span>
     </a>
-    <div class="input-group">
-  <div class="form-outline">
-    <input type="search" id="form1" class="form-control" placeholder="Search" />
-  </div>
-  <button class="btn btn-primary"> 
-      <span class="material-icons">search</span>
-  </button>
-    </div>
     <div class="card-body">
     <div class="table-responsive">
          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -26,6 +18,7 @@
                     <th>Lokasi</th>
                     <th>Suhu</th>
                     <th>Edit</th>
+                    <th>Hapus</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +40,11 @@
                             <span class="material-icons">edit</span>
                         </a>
                     </td>
+                    <td>
+                        <a onclick="return confirm('Apakah anda yakin?')" href="hapus_catatan.php?id_catatan=<?= $value['id_catatan']; ?>" class="btn btn-secondary">
+                            <span class="material-icons">delete</span>
+                        </a>
+                    </td>
                 </tr>
                 <?php } ?>
             </tbody>
@@ -55,3 +53,7 @@
             
     </div>
 </div>
+
+<script> $(document).ready( function () {
+    $('#dataTable').DataTable();
+} );</script>

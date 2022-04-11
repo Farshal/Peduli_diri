@@ -14,6 +14,10 @@ if (empty($_SESSION['nik'])) { ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User - Peduli Diri</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
@@ -24,6 +28,7 @@ if (empty($_SESSION['nik'])) { ?>
 </head>
 
 <body>
+    
     <div class="row">
 <div class="col">
     <div class="sidebar">
@@ -97,5 +102,4 @@ if (empty($_SESSION['nik'])) { ?>
      
     </div>
     </div>
-</body>
 </html>
