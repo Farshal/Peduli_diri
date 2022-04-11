@@ -14,10 +14,10 @@ if (empty($_SESSION['nik'])) { ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User - Peduli Diri</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/custom_user.css">
@@ -41,13 +41,13 @@ if (empty($_SESSION['nik'])) { ?>
             <li>
                 <a  href="?url=tulis_catatan">
                     <i class="material-icons">add_circle</i>
-                    <span class="link_name">Tambah Riwayat Perjalanan</span>
+                    <span class="link_name">Tambah Riwayat</span>
                 </a>
             </li>
             <li>
                 <a href="?url=catatan_perjalanan">
                     <i class="material-icons">location_city</i>
-                    <span class="link_name">Riwayat Perjalanan Anda</span>
+                    <span class="link_name">Riwayat Perjalanan</span>
                 </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ if (empty($_SESSION['nik'])) { ?>
             </li>
         </ul>
     </div>
-    <div class="h2">
+    <div class="he"">
     <?php
                         $url = @$_GET['url'];
                         if(!empty($url)) {
@@ -79,7 +79,18 @@ if (empty($_SESSION['nik'])) { ?>
                                     echo"<p>Halaman Tidak Ditemukan<p>";
                                     break;
                             }
-                        }else {
+                        }else {?>
+                        <div class="row">
+                            <div class="col-5">
+                                <h2 class="hi">Peduli Diri</h2>
+                                <p class="hp">Catat Riwayat <br> Perjalanan Anda <br> Bersama Kami</p>
+                            </div>
+                            <div class="col-7">
+                                <img src="img/pict.jpg" alt="" class="img-fluid mt-0">
+                            </div>
+                            </div>
+                                  <div class="mt-6 ho"> 
+                                <?php
                             echo"<p> Selamat Datang ".$_SESSION['nama_lengkap']." !!</p>";
                         }
                         ?>
