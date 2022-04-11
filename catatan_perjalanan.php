@@ -1,3 +1,4 @@
+
 <div class="card">
     <div class="card-header">
     <a href="user.php" class="btn btn-primary btn-icon-split mb-4">
@@ -6,8 +7,14 @@
         </span>
         <span class="text">Kembali</span>
     </a>
+    <div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control" placeholder="Search" />
+  </div>
+  <button class="btn btn-primary"> 
+      <span class="material-icons">search</span>
+  </button>
     </div>
-    
     <div class="card-body">
     <div class="table-responsive">
          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -35,9 +42,9 @@
                     <td><?= $value['waktu']?></td>
                     <td><?= $value['lokasi'] ?></td>
                     <td><?= $value['suhu'] ?></td>
-                    <td>
-                        <a href="?url=edit_catatan<? $value['id_catatan'] ?>" class="btn btn-info">
-                            Edit
+                    <td class="d-flex justify-content-center">
+                        <a href="?url=edit_catatan&id_catatan=<?= $value['id_catatan']; ?>" class="btn btn-secondary">
+                            <span class="material-icons">edit</span>
                         </a>
                     </td>
                 </tr>
